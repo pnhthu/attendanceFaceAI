@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            padding: 20px;
+        }
+         .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 40%;
+            max-width: 250px;
+        }
+
+        /* Khối nội dung */
+        .header {
+            background-color: rgb(229, 246, 255);
+            padding: 25px;
+            border-radius: 10px;
+            
+        }
+
+         .header h1 {
+            text-align: center;
+            margin: 10px 0 5px;
+            color: #0b5394;
+        }
+
+        .header h2 {
+            text-align: center;
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px 25px;
+            max-width: 900px;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .info {
+            margin-bottom: 8px;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border-bottom: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="logo">
+            <img src="../Logo đơn vị_Khoa CNTT.png" alt="Logo khoa CNTT">
+        </div>
+
+        <!-- Nội dung -->
+        <div class="header">
+            <h1>HỆ THỐNG ĐIỂM DANH</h1>
+            <h2>CHI TIẾT LỚP HỌC</h2>
+            <div class="card">
+                <h3>MÔN: LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG</h3>
+
+                <div class="info"><span class="label">Lớp:</span> DHTTT20A</div>
+                <div class="info"><span class="label">Học kỳ - năm:</span> HK1 - 2025</div>
+                <div class="info"><span class="label">Số sinh viên:</span> 80</div>
+
+                <table>
+                    <tr>
+                        <th>STT</th>
+                        <th>MSSV</th>
+                        <th>Họ tên</th>
+                        <th>Trạng thái hôm nay</th>
+                        <th>Thời gian điểm danh</th>
+                    </tr>
+                    <!-- Dữ liệu sinh viên sẽ thêm ở đây -->
+                    <TR>
+                        <td>1</td>
+                        <td>246xxxxx</td>
+                        <td>Nguyễn Văn A</td>
+                        <td>Đã điểm danh</td>
+                        <td>12:30</td>
+                    </TR>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <img src="../Logo đơn vị_Khoa CNTT.png" alt="logo khoa"
+        style="width: 40%; height: auto;">
+    </div>
+    <div style="background-color: rgb(229, 246, 255);">
+        <div style="text-align: center;">
+            <h1>HỆ THỐNG ĐIỂM DANH</h1> 
+            <h2>DANH SÁCH LỚP HỌC</h2>
+        </div>
+        <ul>
+            <li>Tên môn học: </li>
+            <li>Học kì - năm: </li>
+            <li>Số sinh viên: </li>
+            <li>
+                <input type="button" value="Xem chi tiết">
+            </li>
+        </ul>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách lớp học</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Logo */
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 40%;
+            max-width: 250px;
+        }
+
+        /* Khối nội dung */
+        .header {
+            background-color: rgb(229, 246, 255);
+            padding: 25px;
+            border-radius: 10px;
+            
+        }
+
+         .header h1 {
+            text-align: center;
+            margin: 10px 0 5px;
+            color: #0b5394;
+        }
+
+        .header h2 {
+            text-align: center;
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        /* Card lớp học */
+        .class-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-top: 20px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        .class-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .class-card li {
+            margin-bottom: 10px;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        /* Nút */
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0b5394;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #083c6d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="logo">
+            <img src="../Logo đơn vị_Khoa CNTT.png" alt="Logo khoa CNTT">
+        </div>
+
+        <!-- Nội dung -->
+        <div class="header">
+            <h1>HỆ THỐNG ĐIỂM DANH</h1>
+            <h2>DANH SÁCH LỚP HỌC</h2>
+
+            <!-- Lớp học 1 -->
+            <div class="class-card">
+                <ul>
+                    <li><span class="label">Tên môn học:</span> Lập trình hướng đối tượng</li>
+                    <li><span class="label">Học kỳ - năm:</span> HK1 - 2025</li>
+                    <li><span class="label">Số sinh viên:</span> 80</li>
+                    <li>
+                        <input class="btn" type="button" value="Xem chi tiết">
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Lớp học 2 -->
+            <div class="class-card">
+                <ul>
+                    <li><span class="label">Tên môn học:</span> Hệ thống thông tin quản lý</li>
+                    <li><span class="label">Học kỳ - năm:</span> HK2 - 2026</li>
+                    <li><span class="label">Số sinh viên:</span> 90</li>
+                    <li>
+                        <input class="btn" type="button" value="Xem chi tiết">
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

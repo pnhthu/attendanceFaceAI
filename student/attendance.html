@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Attendance</title>
+  <link rel="stylesheet" href="attendance.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- CỘT TRÁI: CAMERA -->
+  <div class="card camera-card">
+    <h2>Camera điểm danh</h2>
+
+    <div class="camera-box">
+      <video id="video" autoplay muted></video>
+    </div>
+
+    <button class="btn-primary" onclick="startCamera()">
+      Bắt đầu điểm danh
+    </button>
+  </div>
+
+  <!-- CỘT PHẢI: TRẠNG THÁI -->
+  <div class="card status-card">
+    <h2>Trạng thái</h2>
+
+    <div class="status success">
+      <div class="icon">✔</div>
+      <p class="title">Nhận diện thành công</p>
+      <p>Thời gian: 07:30</p>
+      <p>AI Face Recognition</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  async function startCamera() {
+    const video = document.getElementById('video');
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+      video.srcObject = stream;
+    } catch (e) {
+      alert("Không truy cập được camera");
+    }
+  }
+</script>
+
+</body>
+</html>

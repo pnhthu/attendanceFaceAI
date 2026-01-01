@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0; /*khoảng cách bên ngoài*/
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7fa;
+        }
+
+        .container {
+            max-width: 900px; /*độ rộng tối đa*/
+            margin: auto; 
+            padding: 20px; /*khoảng cách giữa các thành phần với rìa*/
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 200px;
+            max-width: 60%;
+        }
+
+        .header h1 {
+            margin: 10px 0 5px;
+            color: #0b5394;
+        }
+
+        .header h2 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        /* Card */
+        .card {
+            background-color: #e5f6ff;
+            border-radius: 10px;  /*bo tròn*/
+            padding: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+        }
+
+        .info-row {
+            display: flex;
+            margin-bottom: 12px;
+        }
+
+        .info-label {
+            width: 220px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .info-value {
+            color: #555;
+        }
+
+        /* Button */
+        .btn-group {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 0 8px;
+            border: none; /*viền*/
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .btn-attendance {
+            background-color: #0b5394;
+            color: white;
+        }
+
+        .btn-attendance:hover {
+            background-color: #083c6d;
+        }
+
+        .btn-logout {
+            background-color: #e06666;
+            color: white;
+        }
+
+        .btn-logout:hover {
+            background-color: #c74b4b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="../Logo đơn vị_Khoa CNTT.png" alt="Logo khoa CNTT">
+            <h1>HỆ THỐNG ĐIỂM DANH</h1>
+            <h2>THÔNG TIN SINH VIÊN</h2>
+        </div>
+
+        <!-- Thông tin sinh viên -->
+        <div class="card">
+            <div class="info-row">
+                <div class="info-label">Họ và tên:</div>
+                <div class="info-value">Nguyễn Văn A</div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label">MSSV:</div>
+                <div class="info-value">246XXXXX</div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label">Khoa:</div>
+                <div class="info-value">Công nghệ thông tin</div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label">Lớp:</div>
+                <div class="info-value">DHHTTT20A</div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label">Học kì/Năm học:</div>
+                <div class="info-value">HK2/2025-2026</div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label">Tổng số lớp học:</div>
+                <div class="info-value">7</div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label">% Chuyên cần:</div>
+                <div class="info-value">92%</div>
+            </div>
+
+            <!-- Nút chức năng -->
+            <div class="btn-group">
+                <button class="btn-attendance">Bắt đầu điểm danh</button>
+                <button class="btn-logout">Đăng xuất</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
