@@ -1,22 +1,23 @@
-const video = document.getElementById('video');
-const canvas = document.getElementById('canvas');
-const context = canvas.getContext('2d');
+let video, canvas, context;
 
-// Bật camera
+window.onload = () => {
+  video = document.getElementById('video');
+  canvas = document.getElementById('canvas');
+  context = canvas.getContext('2d');
+};
+
+
 async function startCamera() {
-    const video = document.getElementById('video');
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-      video.srcObject = stream;
-    } catch (e) {
-      alert("Không truy cập được camera");
-    }
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+    video.srcObject = stream;
+  } catch (e) {
+    alert("Không truy cập được camera");
+  }
 }
 
-// Chụp ảnh từ camera
 function capture() {
   context.drawImage(video, 0, 0, canvas.width, canvas.height);
-
   const imageData = canvas.toDataURL('image/png');
   console.log(imageData);
 }

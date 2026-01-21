@@ -63,23 +63,34 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="../Logo đơn vị_Khoa CNTT.png" alt="logo khoa">
-        </div>
-
-        <div class="header">
-            <h1>HỆ THỐNG ĐIỂM DANH</h1>
-            <h2>ĐĂNG NHẬP</h2>
-            <div class="tab">
-                <p>Nhập MGV: <input type="text"></p>
-                <p>Nhập mật khẩu: <input type="text"></p>
-                <a href="dashboardSV.html">
-                    <button class="btn">Đăng nhập</button>
-                </a>
-            </div>
-        </div>
-
+  <div class="container">
+    <div class="logo">
+      <img src="../Logo đơn vị_Khoa CNTT.png" alt="logo khoa">
     </div>
+
+    <div class="header">
+      <h1>HỆ THỐNG ĐIỂM DANH</h1>
+      <h2>ĐĂNG NHẬP</h2>
+
+      <form id="loginForm" class="tab">
+        <p>
+          Nhập MSSV:
+          <input type="text" id="username" required>
+        </p>
+
+        <p>
+          Nhập mật khẩu:
+          <input type="password" id="password" required>
+        </p>
+
+        <button type="submit" class="btn">Đăng nhập</button>
+
+        <p id="error" style="color:red; display:none"></p>
+        <p id="loading" style="display:none">Đang đăng nhập...</p>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="../js/login.js"></script>
 </body>
 </html>
